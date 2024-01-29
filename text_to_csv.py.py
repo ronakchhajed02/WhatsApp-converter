@@ -1,7 +1,12 @@
-fw = open(r"C:\Users\Ronak Chhajed\chats\WhatsappChats_new.csv", "a", encoding='UTF-8')
+#This code will converts exported .txt file from whatsapp to .csv file.
+
+#Copy and paste your file path here inside double quotes.
+File_path = r""    
+
+fw = open(File_path, "a", encoding='UTF-8')
 fw.seek(0)
 fw.truncate()
-fr = open(r"C:\Users\Ronak Chhajed\Downloads\WhatsApp Chat with Krishna 427.txt", "r", encoding='UTF-8')
+fr = open(File_path, "r", encoding='UTF-8')
 
 while True:
     line = fr.readline()
